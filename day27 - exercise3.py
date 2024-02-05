@@ -31,7 +31,7 @@ for id, question in enumerate(question_answers, start=1):
     shuffle(options)
 
     for index, option in enumerate(zip(options, options_ind),start=1):
-        print(f"{options_ind[index-1]}. {option[0]}", end="     " if index%2!=0  else "\n")
+        print(f"{options_ind[index-1]}. {option[0]}", end= "\t" if index%2!=0  else "\n")
     answer = input("Enter your answer : ")
   
     print("\n")
@@ -54,14 +54,5 @@ for id, question in enumerate(question_answers, start=1):
         else:
             score = 3000000
             print(f"You got ₹{score} ".center(50,"-"))
-
-
-        
-
         break
     print("\n")
-   
-        
-
-
-
